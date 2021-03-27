@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_inicio"
+            android:icon="@drawable/incio"
+            android:title="Inicio" />
+        <item
+            android:id="@+id/nav_cuenta"
+            android:icon="@drawable/tucuenta"
+            android:title="Tu cuenta" />
+        <item
+            android:id="@+id/nav_refugios"
+            android:icon="@drawable/refugio"
+            android:title="Refugios" />
+        <item
+            android:id="@+id/nav_cerrarsesion"
+            android:icon="@drawable/cerrarsesion"
+            android:title="Cerrar Sesion" />
+    </group>
+
+    <item android:title="Comunicacion">
+        <menu>
+            <item
+                android:id="@+id/nav_contacto"
+                android:icon="@drawable/contaco"
+                android:title="Contacto" />
+            <item
+                android:id="@+id/nav_info"
+                android:icon="@drawable/informacion"
+                android:title="Sobre nosotros" />
+            <item
+                android:id="@+id/nav_compartir"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Compartir" />
+        </menu>
+    </item>
+
+</menu>

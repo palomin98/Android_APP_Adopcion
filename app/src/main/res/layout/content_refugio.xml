@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.adoptales.rubenpalomo.adoptales.refugio"
+    tools:showIn="@layout/app_bar_refugio"
+    android:orientation="vertical"
+    android:background="#d6d6d6">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginBottom="55dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:background="@drawable/datoscuenta">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgRefugio"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@mipmap/ic_launcher"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/redondeadoimg"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp">
+                    <TextView
+                        android:id="@+id/txtNombreRefugio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Ruben Palomo"
+                        android:textSize="35dp"
+                        android:textStyle="bold"
+                        android:textColor="#151414"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:background="#3b8e86"/>
+
+                    <TextView
+                        android:id="@+id/txtEmailRefugio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Ruben Palomo"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#151414"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/redondeadoenviarcorreo"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:padding="15dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/txtInformacion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Informacion: "
+                        android:textSize="30dp"
+                        android:textColor="#151414"/>
+                    <TextView
+                        android:id="@+id/txtNumeroRefugio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="      6666666666"
+                        android:textSize="20dp"
+                        android:textColor="#212020"/>
+                    <TextView
+                        android:id="@+id/txtDireccionRefugio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="      6666666666"
+                        android:textSize="20dp"
+                        android:textColor="#212020"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/redondeadoenviarcorreo"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/txtEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Email: "
+                    android:textSize="23dp"
+                    android:textColor="#212020"/>
+
+                <EditText
+                    android:id="@+id/edtEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:hint="Tu email..."
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:id="@+id/txtMensaje"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mensaje: "
+                    android:textSize="23dp"
+                    android:textColor="#212020"/>
+
+                <EditText
+                    android:id="@+id/edtMensaje"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:hint="Tu mensaje..."
+                    android:layout_marginBottom="10dp"/>
+
+                <Button
+                    android:id="@+id/btnEnviarAnimal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enviar Correo"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/redondeadobutton"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:background="#bf44a198"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/navigationanimal"/>
+
+</android.support.constraint.ConstraintLayout>

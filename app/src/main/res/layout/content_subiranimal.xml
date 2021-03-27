@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.adoptales.rubenpalomo.adoptales.subiranimal"
+    tools:showIn="@layout/app_bar_subiranimal"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#d6d6d6">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/datoscuenta"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/enunciadoSubir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nuevo animal"
+                android:layout_marginBottom="20dp"
+                android:textSize="50dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="#151414"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imgSubirAnimal"
+                    android:src="@drawable/icono"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginRight="5dp"/>
+                <Button
+                    android:id="@+id/btnAvatar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="Selecciona avatar del animal"
+                    android:background="@drawable/redondeadobutton"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtNombreAnimalSubir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="26dp"
+                android:textColor="#212020"
+                android:text="Nombre mascota: "/>
+
+            <EditText
+                android:id="@+id/edtNombreAnimalSubir"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Su nombre..."
+                android:background="@drawable/redondeadoedt"
+                android:inputType="textPersonName"/>
+
+            <TextView
+                android:id="@+id/txtTipoAnimalSubir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="26dp"
+                android:textColor="#212020"
+                android:text="Tipo de la mascota: "/>
+
+            <Spinner
+                android:id="@+id/spTipoAnimalSubir"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/redondeadoedt"
+                android:inputType="textPersonName"/>
+
+            <TextView
+                android:id="@+id/txtRazaAnimalSubir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="26dp"
+                android:textColor="#212020"
+                android:text="Raza de la mascota: "/>
+
+            <EditText
+                android:id="@+id/edtRazaAnimalSubir"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Su raza..."
+                android:background="@drawable/redondeadoedt"
+                android:inputType="textPersonName"/>
+
+            <TextView
+                android:id="@+id/txtDescripcionAnimalSubir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="26dp"
+                android:textColor="#212020"
+                android:text="Descripcion de la mascota: "/>
+
+            <EditText
+                android:id="@+id/edtDescripcionAnimalSubir"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Datos varios..."
+                android:background="@drawable/redondeadoedt"
+                android:inputType="textPersonName"/>
+
+            <TextView
+                android:id="@+id/txtEdadAnimalSubir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="26dp"
+                android:textColor="#212020"
+                android:text="Edad de la mascota: "/>
+
+            <EditText
+                android:id="@+id/edtEdadAnimalSubir"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="10dp"
+                android:hint="2..."
+                android:background="@drawable/redondeadoedt"
+                android:inputType="number"/>
+
+            <TextView
+                android:id="@+id/txtGeneroAnimalSubir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="26dp"
+                android:textColor="#212020"
+                android:text="Genero de la mascota: "/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+                <RadioButton
+                    android:id="@+id/rbGeneroMAnimalSubir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:textSize="18dp"
+                    android:text="Macho" />
+                <RadioButton
+                    android:id="@+id/rbGeneroHAnimalSubir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="18dp"
+                    android:text="Hembra" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/txtVacunaAnimalSubir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="26dp"
+                android:textColor="#212020"
+                android:text="¿Esta vacunado/a?"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+                <RadioButton
+                    android:id="@+id/rbVacunaSAnimalSubir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:textSize="18dp"
+                    android:text="Si" />
+                <RadioButton
+                    android:id="@+id/rbVacunaNAnimalSubir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="18dp"
+                    android:text="No" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/txtChipAnimalSubir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="26dp"
+                android:textColor="#212020"
+                android:text="¿Tiene chip?"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+                <RadioButton
+                    android:id="@+id/rbChipSAnimalSubir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:textSize="18dp"
+                    android:text="Si" />
+                <RadioButton
+                    android:id="@+id/rbChipNAnimalSubir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="18dp"
+                    android:text="No" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btnSubirAnimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Subir animal"
+                android:background="@drawable/redondeadobutton"
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:onClick="subirNuevoAnimal"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

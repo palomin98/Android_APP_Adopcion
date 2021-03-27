@@ -1,0 +1,15 @@
+e.separator}lib${file.separator}ext${file.separator}jfxrt.jar"/>
+            </and>
+        </condition>
+    </target>
+    <target name="-set-jfxrt-in-envjdk-jre-old" depends="-set-jfxrt-in-jre-new,-check-jfxrt-in-envjdk-jre" if="do.set.jfxrt.in.envjdk.jre.old">
+        <property name="jfxrt.jar.location" value="${env.JAVA_HOME}${file.separator}jre${file.separator}lib${file.separator}jfxrt.jar"/>
+    </target>
+    <target name="-set-jfxrt-in-envjdk-jre-new" depends="-set-jfxrt-in-envjdk-jre-old,-check-jfxrt-in-envjdk-jre" if="do.set.jfxrt.in.envjdk.jre.new">
+        <property name="jfxrt.jar.location" value="${env.JAVA_HOME}${file.separator}jre${file.separator}lib${file.separator}ext${file.separator}jfxrt.jar"/>
+    </target>
+    <target name="-pre-check-jfx-runtime" depends="-set-jfxrt-in-envjdk-jre-new">
+        <echo message="jfxrt.jar.location = ${jfxrt.jar.location}" level="verbose"/>
+    </target>
+
+    <target name="-check-jfx-runti

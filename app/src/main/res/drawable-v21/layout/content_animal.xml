@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.adoptales.rubenpalomo.adoptales.animal"
+    tools:showIn="@layout/app_bar_animal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/redondeado"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgAnimal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_launcher" />
+
+
+        <TextView
+            android:id="@+id/txtNombreAnimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Ruben Palomo"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:textColor="#151414"
+            android:background="#6ea166"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnLlamarAnimal"
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/redondeadobutton"
+            android:text="Llamar"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/btnIrAnimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ver en maps"
+            android:textColor="#ffffff"
+            android:background="@drawable/redondeadobutton"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/txtDescripcionAnimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Descripcion"
+                android:textSize="30dp"
+                android:textColor="#151414"/>
+
+            <TextView
+                android:id="@+id/txtEdadAnimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Edad"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:textColor="#212020"/>
+
+            <TextView
+                android:id="@+id/txtRazaAnimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Raza"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:textColor="#212020"/>
+
+            <TextView
+                android:id="@+id/txtTipoAnimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tipo"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:textColor="#212020"/>
+
+            <TextView
+                android:id="@+id/txtEmailAnimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="hola@gmail.com"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:textColor="#212020"/>
+
+            <TextView
+                android:id="@+id/txtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email: "
+                android:textSize="23dp"
+                android:textColor="#212020"/>
+
+            <EditText
+                android:id="@+id/edtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Tu email..."
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/txtMensaje"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mensaje: "
+                android:textSize="23dp"
+                android:textColor="#212020"/>
+
+            <EditText
+                android:id="@+id/edtMensaje"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Tu mensaje..."
+                android:layout_marginBottom="10dp"/>
+
+            <Button
+                android:id="@+id/btnEnviarAnimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enviar Correo"
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:background="@drawable/redondeadobutton"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.adoptales.rubenpalomo.adoptales.contacto"
+    tools:showIn="@layout/app_bar_contacto"
+    android:padding="20dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/enunciadoContacto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contacto"
+        android:layout_marginBottom="10dp"
+        android:textSize="50dp"
+        android:gravity="center"
+        android:textColor="#151414"/>
+
+    <TextView
+        android:id="@+id/txtNombreContacto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre:"
+        android:textSize="27dp"
+        android:textColor="#212020"/>
+
+    <EditText
+        android:id="@+id/edtNombreContacto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Tu nombre..."
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/txtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email: "
+        android:textSize="27dp"
+        android:textColor="#212020"/>
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Tu email..."
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/txtMensaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mensaje: "
+        android:textSize="27dp"
+        android:textColor="#212020"/>
+
+    <EditText
+        android:id="@+id/edtMensaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Tu mensaje..."
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/btnEnviarContacto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enviar"
+        android:textSize="20dp"
+        android:textColor="#212020"
+        android:onClick="enviarCorreo"/>
+</LinearLayout>

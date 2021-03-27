@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.adoptales.rubenpalomo.adoptales.login"
+    tools:showIn="@layout/app_bar_login"
+    android:padding="50dp"
+    android:orientation="vertical"
+    android:background="@drawable/fondo">
+
+    <TextView
+        android:id="@+id/enunciadoLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_marginBottom="10dp"
+        android:textSize="50dp"
+        android:gravity="center"
+        android:textColor="#151414"/>
+
+    <ImageView
+        android:layout_width="171dp"
+        android:layout_height="84dp"
+        android:layout_gravity="center"
+        android:src="@drawable/icono" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp">
+
+        <TextView
+            android:id="@+id/txtEmailLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email: "
+            android:textSize="30dp"
+            android:textColor="#212020"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/edtEmailLogin"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:inputType="textEmailAddress"
+            android:hint="Tu email..."
+            android:textSize="20dp"
+            android:background="@drawable/redondeadoedt"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/txtPasswordLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contraseña: "
+            android:textSize="30dp"
+            android:textColor="#212020"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/edtPasswordLogin"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="Tu contraseña..."
+            android:textSize="20dp"
+            android:background="@drawable/redondeadoedt"
+            android:layout_marginBottom="30dp"/>
+
+        <Button
+            android:id="@+id/btnEntrarLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:background="@drawable/redondeadobutton"
+            android:textColor="#ffffff"
+            android:text="Entrar"
+            android:onClick="loguearse"/>
+    </LinearLayout>
+
+</LinearLayout>

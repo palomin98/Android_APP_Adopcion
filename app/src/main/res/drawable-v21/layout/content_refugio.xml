@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.adoptales.rubenpalomo.adoptales.refugio"
+    tools:showIn="@layout/app_bar_refugio"
+    android:padding="20dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="15dp">
+        <ImageView
+            android:id="@+id/imgRefugio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:id="@+id/txtNombreRefugio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Ruben Palomo"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:textColor="#151414"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtNumeroRefugio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="666......."
+        android:textSize="26dp"
+        android:textColor="#212020"/>
+
+    <Button
+        android:id="@+id/btnLlamarRefugio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/txtDireccionRefugio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calle......."
+        android:textSize="26dp"
+        android:textColor="#212020"/>
+    <Button
+        android:id="@+id/btnIrRefugio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/txtEmailRefugio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hola@gmail.com"
+        android:textSize="26dp"
+        android:textColor="#212020"/>
+
+</LinearLayout>

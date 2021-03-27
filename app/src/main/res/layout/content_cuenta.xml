@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.adoptales.rubenpalomo.adoptales.cuenta"
+    tools:showIn="@layout/app_bar_cuenta"
+    android:orientation="vertical"
+    android:background="#d6d6d6">
+
+    <TextView
+        android:id="@+id/txtIdCuenta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="id:"
+        android:textSize="6dp"
+        android:textStyle="bold"
+        android:textColor="#383838"
+        android:layout_marginLeft="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@drawable/datoscuenta">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgCuenta"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/redondeadoimg"
+            android:src="@mipmap/ic_launcher"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="10dp">
+            <TextView
+                android:id="@+id/txtNombreCuenta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Ruben Palomo"
+                android:textSize="35dp"
+                android:textStyle="bold"
+                android:textColor="#151414"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#3b8e86"/>
+
+            <TextView
+                android:id="@+id/txtEmailCuenta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Ruben Palomo"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#151414"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#3b8e86"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+
+    <GridView
+        android:id="@+id/listAnimalesCuenta"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="2"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="5dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@drawable/datoscuenta"/>
+
+</LinearLayout>

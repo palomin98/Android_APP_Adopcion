@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.adoptales.rubenpalomo.adoptales.animal"
+    android:background="#d6d6d6">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            tools:context="com.adoptales.rubenpalomo.adoptales.animal"
+            tools:showIn="@layout/app_bar_animal"
+            android:orientation="vertical"
+            android:layout_marginBottom="55dp">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imgAnimal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/ic_launcher"
+                        android:layout_marginTop="50dp"/>
+
+                    <TextView
+                        android:id="@+id/txtNombreAnimal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Ruben Palomo"
+                        android:textSize="50dp"
+                        android:textStyle="bold"
+                        android:textColor="#151414"
+                        android:background="#c94db6ac"/>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:id="@+id/ly1"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/datosanimalfondo">
+                        <TextView
+                            android:id="@+id/txtGenero"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="..."
+                            android:gravity="center"
+                            android:textSize="25dp"
+                            android:textColor="#000"/>
+                        <ImageView
+                            android:id="@+id/imgGenero"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:src="@drawable/gender"
+                            android:padding="10dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/ly2"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/datosanimalfondo">
+                        <TextView
+                            android:id="@+id/txtEdadAnimal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="..."
+                            android:gravity="center"
+                            android:textSize="25dp"
+                            android:textColor="#000"/>
+                        <ImageView
+                            android:id="@+id/imgAnos"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:src="@drawable/balloon"
+                            android:padding="10dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/ly3"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/datosanimalfondo">
+                        <TextView
+                            android:id="@+id/txtVacuna"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="..."
+                            android:gravity="center"
+                            android:textSize="25dp"
+                            android:textColor="#000"/>
+                        <ImageView
+                            android:id="@+id/imgVacuna"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:padding="10dp"
+                            android:src="@drawable/vaccine"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/ly4"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/datosanimalfondo">
+                        <TextView
+                            android:id="@+id/txtChip"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="..."
+                            android:gravity="center"
+                            android:textSize="25dp"
+                            android:textColor="#000"/>
+                        <ImageView
+                            android:id="@+id/imgChip"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:src="@drawable/chip"
+                            android:padding="10dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@drawable/redondeadoenviarcorreo"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:padding="15dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/txtInformacion"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Informacion: "
+                                android:textSize="30dp"
+                                android:textColor="#151414"/>
+
+                            <TextView
+                                android:id="@+id/txtEmailAnimal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="      hola@gmail.com"
+                                android:textSize="20dp"
+                                android:textStyle="bold"
+                                android:textColor="#212020"/>
+
+                            <TextView
+                                android:id="@+id/txtNumeroAnimal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="      6666666666"
+                                android:textSize="20dp"
+                                android:textStyle="bold"
+                                android:textColor="#212020"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@drawable/redondeadoenviarcorreo"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:padding="15dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/txtInfoAnimal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Datos: "
+                                android:textSize="30dp"
+                                android:textColor="#151414"/>
+                            <TextView
+                                android:id="@+id/txtTipoAnimal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Tipo"
+                                android:textStyle="bold"
+                                android:textSize="20dp"
+                                android:textColor="#212020"/>
+                            <TextView
+                                android:id="@+id/txtDescripcionAnimal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Descripcion..."
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:textColor="#151414"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/redondeadoenviarcorreo"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:padding="15dp">
+
+                        <TextView
+                            android:id="@+id/txtEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Email: "
+                            android:textSize="23dp"
+                            android:textColor="#212020"/>
+
+                        <EditText
+                            android:id="@+id/edtEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:hint="Tu email..."
+                            android:layout_marginBottom="10dp"/>
+
+                        <TextView
+                            android:id="@+id/txtMensaje"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Mensaje: "
+                            android:textSize="23dp"
+                            android:textColor="#212020"/>
+
+                        <EditText
+                            android:id="@+id/edtMensaje"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:hint="Tu mensaje..."
+                            android:layout_marginBottom="10dp"/>
+
+                        <Button
+                            android:id="@+id/btnEnviarAnimal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Enviar Correo"
+                            android:onClick="enviarCorreo"
+                            android:textSize="20dp"
+                            android:textColor="#ffffff"
+                            android:background="@drawable/redondeadobutton"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:background="#bf44a198"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/navigationanimal"/>
+</android.support.constraint.ConstraintLayout>
+

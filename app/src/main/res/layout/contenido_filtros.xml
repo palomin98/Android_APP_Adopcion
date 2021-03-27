@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="475dp"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/datoscuenta">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/datoscuenta"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/enunciadoBuscar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Buscar animal"
+                android:layout_marginBottom="20dp"
+                android:textSize="50dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="#151414"/>
+
+            <TextView
+                android:id="@+id/txtNombreAnimalBuscar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="26dp"
+                android:textColor="#212020"
+                android:text="Nombre mascota: "/>
+
+            <EditText
+                android:id="@+id/edtNombreAnimalBuscar"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Su nombre..."
+                android:background="@drawable/redondeadoedt"
+                android:inputType="textPersonName"/>
+
+            <TextView
+                android:id="@+id/txtRazaAnimalBuscar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="26dp"
+                android:textColor="#212020"
+                android:text="Raza de la mascota: "/>
+
+            <EditText
+                android:id="@+id/edtRazaAnimalBuscar"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Su raza..."
+                android:background="@drawable/redondeadoedt"
+                android:inputType="textPersonName"/>
+
+            <TextView
+                android:id="@+id/txtEdadAnimalBuscar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="26dp"
+                android:textColor="#212020"
+                android:text="Edad de la mascota: "/>
+
+            <EditText
+                android:id="@+id/edtEdadAnimalBuscar"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="10dp"
+                android:hint="2..."
+                android:background="@drawable/redondeadoedt"
+                android:inputType="number"/>
+
+            <TextView
+                android:id="@+id/txtGeneroAnimalBuscar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="26dp"
+                android:textColor="#212020"
+                android:text="Genero de la mascota: "/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+                <RadioButton
+                    android:id="@+id/rbGeneroMAnimalBuscar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:textSize="18dp"
+                    android:text="Macho" />
+                <RadioButton
+                    android:id="@+id/rbGeneroHAnimalBuscar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="18dp"
+                    android:text="Hembra" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/txtVacunaAnimalBuscar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="26dp"
+                android:textColor="#212020"
+                android:text="¿Esta vacunado/a?"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+                <RadioButton
+                    android:id="@+id/rbVacunaSAnimalBuscar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:textSize="18dp"
+                    android:text="Si" />
+                <RadioButton
+                    android:id="@+id/rbVacunaNAnimalBuscar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="18dp"
+                    android:text="No" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/txtChipAnimalBuscar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="26dp"
+                android:textColor="#212020"
+                android:text="¿Tiene chip?"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+                <RadioButton
+                    android:id="@+id/rbChipSAnimalBuscar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:textSize="18dp"
+                    android:text="Si" />
+                <RadioButton
+                    android:id="@+id/rbChipNAnimalBuscar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="18dp"
+                    android:text="No" />
+            </RadioGroup>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnBuscarAnimal"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:text="buscar animal"
+                    android:background="@drawable/redondeadobutton"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff"
+                    android:layout_marginRight="10dp"/>
+
+                <Button
+                    android:id="@+id/btnAtrasFiltros"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:text="Atras"
+                    android:background="@drawable/redondeadobutton"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
